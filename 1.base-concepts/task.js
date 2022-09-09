@@ -47,11 +47,6 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
     return `Параметр "Общая стоимость" содержит неправильное значение "${amount}"`;
   }
 
-  if (!isNumeric(amount) || amount < 0) {
-    return `Параметр "Общая стоимость" содержит неправильное значение "${amount}"`;
-  }
-
-
   if (isNumeric(percent) && isNumeric(contribution) && isNumeric(amount)) {
 
     let S = amount - contribution; // тело кредита
