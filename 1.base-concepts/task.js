@@ -66,7 +66,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
     }
 
     monthPayment = S * (P + (P / (((1 + P) ** n) - 1)));
-    totalAmount = (monthPayment * n).toFixed(2);
+    totalAmount = Number((monthPayment * n).toFixed(2));
 
   }
 
