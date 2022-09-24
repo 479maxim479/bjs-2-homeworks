@@ -63,3 +63,4 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 
   return totalAmount;
 }
+
