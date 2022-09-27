@@ -34,30 +34,27 @@ class Magazine extends PrintEditionItem {
 class Book extends PrintEditionItem {
   constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
     super(name, releaseDate, pagesCount, state = 100, type = null);
-    this.type = "book";
     this.author = author;
+    this.type = "book";
   }
 }
-
 class NovelBook extends Book {
   constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
-    super(name, releaseDate, pagesCount, state = 100, type = null);
+    super(author, name, releaseDate, pagesCount, state = 100, type = null);
     this.type = "novel";
     this.author = author;
   }
 }
-
 class FantasticBook extends Book {
   constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
-    super(name, releaseDate, pagesCount, state = 100, type = null);
-    this.type = "fantastic";
+    super(author, name, releaseDate, pagesCount, state = 100, type = null);
     this.author = author;
+    this.type = "fantastic";
   }
 }
-
 class DetectiveBook extends Book {
   constructor(author, name, releaseDate, pagesCount, state = 100, type = null) {
-    super(name, releaseDate, pagesCount, state = 100, type = null);
+    super(author, name, releaseDate, pagesCount, state = 100, type = null);
     this.type = "detective";
     this.author = author;
   }
@@ -94,6 +91,11 @@ class Library {
     }
   }
 }
+
+// printItem = new Book('А. Сапковский', 'Меч Предназначения', 1992, 384);
+// console.log(printItem)
+
+
 
 
 
