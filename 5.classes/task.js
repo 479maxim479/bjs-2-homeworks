@@ -92,6 +92,13 @@ class Library {
   }
 }
 
+
+
+
+
+
+
+
 // printItem = new Book('А. Сапковский', 'Меч Предназначения', 1992, 384);
 // console.log(printItem)
 
